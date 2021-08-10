@@ -1,0 +1,32 @@
+.ticker {
+  &__container {
+    position: relative;
+    background-color: $col__bg--ticker;
+    float: left;
+    width: 70%;
+    min-height: 15rem;
+    @include respondFor(tab-port) {
+      width: 100%;
+    }
+  }
+  &__loading {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 2.5rem;
+    width: 2.5rem;
+    img {
+      height: 100%;
+      width: 100%;
+    }
+  }
+}
+
+.error {
+  width: 65%;
+  float: left;
+  padding: 1.5rem;
+  background-color: #fde4e4;
+  color: #cf082a;
+}

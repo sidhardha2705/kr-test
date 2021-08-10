@@ -1,0 +1,42 @@
+.carousel {
+  &__container {
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    div {
+      &:not(:last-child) {
+        margin-bottom: 1rem;
+      }
+    }
+  }
+  &__score {
+    color: $col__text--score;
+    font-size: 1.5rem;
+  }
+  &__image {
+    height: 1rem !important;
+    width: 1rem !important;
+    display: inline-block;
+    margin-right: 1rem;
+  }
+  &__teamnames {
+    color: white;
+    display: inline-block;
+    font-size: 1.3rem;
+  }
+  &__date {
+    color: $col__text--date;
+  }
+  &__link,
+  &__link:visited,
+  &__link:active,
+  &__link:link {
+    color: white;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    background-color: $col__primary;
+    border-radius: 0.5rem;
+  }
+}
