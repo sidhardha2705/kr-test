@@ -22,7 +22,7 @@ const CarouselContent = ({ event }) => {
   return (
     <div className="carousel__container">
       <div className="carousel__score">
-        {event.liveData.score.home} - {event.liveData.score.away}
+        {event.liveData.score?.home} - {event.liveData.score?.away}
       </div>
 
       <div className="carousel__teamnames">
